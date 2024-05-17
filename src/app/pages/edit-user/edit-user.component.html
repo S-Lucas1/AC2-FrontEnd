@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Edit User</h2>
+    <h6>Account is Linked to Email</h6>
+    <form [formGroup]="editUserForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" formControlName="name" id="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" formControlName="email" id="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="role">Role:</label>
+        <select formControlName="role" id="role" class="form-control">
+          <option value="FE Engineer">FE Engineer</option>
+          <option value="BE Engineer">BE Engineer</option>
+          <option value="Data Analyst">Data Analyst</option>
+          <option value="Technical Lead">Technical Lead</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password" id="password" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!editUserForm.valid">Update User</button>
+    </form>
+  </div>
+  

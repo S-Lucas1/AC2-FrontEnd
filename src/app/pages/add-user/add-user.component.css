@@ -1,0 +1,28 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn-primary {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+  }
+  
