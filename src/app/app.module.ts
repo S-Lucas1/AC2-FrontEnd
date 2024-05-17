@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './pages/home/components/welcome/welcome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.component';
+import { AddUserComponent } from './pages/add-user/add-user.component';
+import { EditUserComponent } from './pages/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,16 @@ import { TodoListComponent } from './pages/home/pages/todo-list/todo-list.compon
     NavbarComponent,
     UsersComponent,
     WelcomeComponent,
-    TodoListComponent
+    TodoListComponent,
+    AddUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],

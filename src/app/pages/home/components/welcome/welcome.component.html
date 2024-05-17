@@ -1,8 +1,23 @@
-<div class="container-fluid">
-  <div class="row  align-items-center text-center full-height">
-    <div class="col">
-      <h1>Welcome to your aplication</h1>
-      <h2>You are logged in</h2>
-    </div>
+<div class="container">
+  <h1>Welcome to Our Application!</h1>
+  <h2>User Overview</h2>
+
+  <div class="summary">
+    <h3>Total Users: {{ totalUsers }}</h3>
+    <h4>Users by Role</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let role of rolesCount">
+          <td>{{ role.role }}</td>
+          <td>{{ role.count }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>

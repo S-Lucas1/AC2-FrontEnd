@@ -1,4 +1,13 @@
 .full-height {
   min-height: 100%;
-  height: 80vh;
+  height: auto;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 0.8em;
 }
